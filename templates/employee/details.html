@@ -1,0 +1,14 @@
+{% extends 'snippets/base.html' %}
+{% load static %}
+{% block title %} {{block.super}}|Detail {% endblock title %}
+
+{% block content %}
+<div style="text-align: center;">
+	<h1><b>{{object.first_name}}</b></h1>
+	<a>
+    <img src="{{object.image.url}}" class="img-thumbnail float-left" alt="{{object.first_name}}">
+  </a>
+  <h3>Details</h3>
+  <p><b>Employee ID:{{object.employee_id}},<br/>First Name:{{object.first_name}},<br/>Last Name:{{object.last_name}},<br/>Phone:{{object.phone}},</b></b></p>
+ </div>
+{% endblock content %}

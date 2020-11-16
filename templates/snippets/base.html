@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	{% include 'snippets/css.html' %}
+	<title>{% block title %}ABC Private Limited{% endblock title %}</title>
+</head>
+<body background="{% static 'img/back.jpg' %}">
+	{% include 'snippets/header.html' %}
+	<div class="container">
+		{% block content %}
+		{% endblock content %}
+	</div>
+</body>
+	{% include 'snippets/js.html' %}
+</html>
+<style>
+</style>
